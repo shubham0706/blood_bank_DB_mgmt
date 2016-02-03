@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Register</title>
+<style>
+body {
+		background-image: url("w3.jpg");
+		no-repeat center center fixed;
+        background-size: cover;
+		}
+html{
+		font-family:Segoe UI Light;
+		-ms-text-size-adjust:100%;
+		-webkit-text-size-adjust:100%;
+		}
+input {
+		  border: solid 2px #E5E5E5;
+		  outline: 0;
+		  width: 200px;
+		  background: #FFFFFF;
+		  margin-right:520px;
+		  background: transparent;
+      }		
+select {
+	margin-right:520px;
+	width: 200px;
+	background: transparent;
+	border: solid 2px #E5E5E5;
+}
+form
+{
+	margin-left:10px;
+	text-align:right;
+}
+</style>
+</head>
+<body>
+<h2><font color='navy'><center>Register Users<center></font></h2>
+<b>
+<form action='signpost.php' method='POST'>
+UserName: <input type='text' name='name' size="20" pattern='[a-zA-Z\s]{3,20}' required><br/>
+Password: <input type='password' name='password' size="20" pattern='[a-zA-Z0-9\s.]{6,20}'  placeholder='Minimum 6 char' required><br/>
+Confirm Password: <input type='password' name='cpassword' size="20" pattern='[a-zA-Z0-9\s.]{6,20}' required><br/>
+Type:  <select name='type'>
+<option value='Donor'>Donor</option>
+<option value='Customer'>Customer</option>
+</select><br/>
+<input type='submit' name='submit' value='Register'>
+</form>
+</b>
+</body>
+</html>
